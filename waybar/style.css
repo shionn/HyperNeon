@@ -6,9 +6,9 @@
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-image-source: linear-gradient(to right, #33ccff, #00ff99);
+    /*border-image-source: linear-gradient(to right, #33ccff, #00ff99);
     border-image-slice: 1;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid;*/
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -119,6 +119,68 @@ button:hover {
 /*    background-color: #64727D;*/
 }
 
+
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+/*
+ * Block Power / CPU / Memory / Temp
+ */
+
+#power-profiles-daemon {
+    min-width: 18px;
+    border: solid 2px white;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0px;
+}
+
+#power-profiles-daemon.performance {
+    color: #f53c3c;
+}
+
+#power-profiles-daemon.balanced {
+    color: #2980b9;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #2ecc71;
+}
+
+#cpu {
+    border: solid 2px white;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+#memory {
+    border: solid 2px white;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+#temperature {
+    border: solid 2px white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 0px;
+}
+
+#temperature.critical {
+    color: #eb4d4b;
+}
+
+
+
+label:focus {
+    background-color: #000000;
+}
+
 #battery {
     background-color: #ffffff;
     color: #000000;
@@ -128,14 +190,6 @@ button:hover {
     color: #ffffff;
     background-color: #26A65B;
 }
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
@@ -147,44 +201,6 @@ button:hover {
     animation-direction: alternate;
 }
 
-#power-profiles-daemon {
-    min-width: 18px;
-    border: solid 2px white;
-    border-radius: 5px;
-/*    text-align: center; */
-/*    padding-right: 15px; */
-}
-
-#power-profiles-daemon.performance {
-    color: #f53c3c;
-    /*background-color: #f53c3c;
-    color: #ffffff;*/
-}
-
-#power-profiles-daemon.balanced {
-    color: #2980b9;
-    /*background-color: #2980b9;
-    color: #ffffff;*/
-}
-
-#power-profiles-daemon.power-saver {
-    color: #2ecc71;
-    /*background-color: #2ecc71;
-    color: #000000;*/
-}
-
-label:focus {
-    background-color: #000000;
-}
-
-#cpu {
-/*    background-color: #2ecc71;
-    color: #000000; */
-}
-
-#memory {
-/*    background-color: #9b59b6;*/
-}
 
 #disk {
     background-color: #964B00;
@@ -235,15 +251,6 @@ label:focus {
     background-color: #ffa000;
 }
 
-#temperature {
-/*    background-color: #f0932b;*/
-  border-right: 2px solid white;
-}
-
-#temperature.critical {
-    color: #eb4d4b;
-    /*background-color: #eb4d4b;*/
-}
 
 #tray {
     background-color: #2980b9;

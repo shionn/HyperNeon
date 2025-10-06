@@ -16,21 +16,21 @@
         "sway/window"
     ],
     "modules-right": [
+        "tray",
         "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
-        "mpd",
+        //"mpd",
         "idle_inhibitor",
         "pulseaudio",
-        "network",
+        //"network",
         "backlight",
-        "keyboard-state",
+        //"keyboard-state",
         "sway/language",
-        "battery",
-        "battery#bat2",
+        //"battery",
+        //"battery#bat2",
         "clock",
-        "tray",
         "custom/power"
     ],
     // Modules configuration
@@ -69,7 +69,7 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
-    "mpd": {
+/*    "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
@@ -94,7 +94,7 @@
         },
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
-    },
+    },*/
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -135,7 +135,7 @@
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
-    "battery": {
+    /*"battery": {
         "states": {
             // "good": 95,
             "warning": 30,
@@ -152,7 +152,7 @@
     },
     "battery#bat2": {
         "bat": "BAT2"
-    },
+    },*/
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -164,7 +164,7 @@
         "power-saver": ""
       }
     },
-    "network": {
+    /*"network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
@@ -172,7 +172,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
+    },*/
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",

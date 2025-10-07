@@ -1,7 +1,11 @@
+
+@define-color accent #d8ae47;
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
+
 }
 
 window#waybar {
@@ -10,13 +14,9 @@ window#waybar {
     border-image-source: linear-gradient(to right, #33ccff, #00ff99);
     border-image-slice: 1;
     border-bottom: 2px solid;*/
-    color: #ffffff;
+    color: white; 
     /*transition-property: background-color;
     transition-duration: .5s;*/
-}
-
-window#waybar.hidden {
-    opacity: 0.2;
 }
 
 button {
@@ -35,16 +35,14 @@ button:hover {
     border-image-slice: 1;
     border-style: solid;
     border-width: 2px;
-    border-color: #33ccff;
+    border-color: @accent;
     border-radius: 5px;
-    margin: 0 5px;
 }
 
 #workspaces button {
     padding: 3px 7px 0px;
     background-color: transparent;
-    color: #ffffff;
-    border-right: 2px solid #33ccff;
+    border-right: 2px solid @accent;
     margin: 0px 0;
 }
 
@@ -53,39 +51,16 @@ button:hover {
 }
 
 #workspaces button.active {
-	color: #33ccff;
+	color: @accent;
 	font-weight: bold;
 }
 
 #window {
-    border: solid 2px #00ff99;	
-    border-radius: 5px;
+	border: solid 2px @accent;	
+/*	border-image: linear-gradient(to right, #33ccff, #00ff99);*/
+	border-radius: 5px;
     padding: 3px 7px 0;
 }
-
-
-/* Block de droite */
-#clock,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#network,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#power-profiles-daemon {
-    padding: 0 5px; 
-    color: #ffffff;
-}
-
-
-#clock {
-/*    background-color: #64727D;*/
-}
-
 
 
 @keyframes blink {
@@ -95,12 +70,19 @@ button:hover {
     }
 }
 
-/* Elements de droite */
+
+
+/* Configuration generale */
 #clock, #tray, #power-profiles-daemon, #cpu, #memory, #temperature, #pulseaudio, #idle_inhibitor, #custom-power {
-    border: solid 2px #00ff99;
+    border: solid 2px @accent;
+    padding: 0 5px; 
 }
 
-#clock, #tray, #temperature, #pulseaudio,  #custom-power {
+#clock, #workspaces {
+	margin-left: 5px;
+}
+
+#tray, #temperature, #pulseaudio,  #custom-power {
 	margin-right: 5px;
 }
 
@@ -175,7 +157,7 @@ button:hover {
 }
 
 #idle_inhibitor.activated {
-    color: #00ff99;
+    color: @accent;
 }
 
 #custom-power {

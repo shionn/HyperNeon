@@ -1,6 +1,8 @@
 # installation
 
-sudo apt install hyprland wofi waybar fonts-font-awesome kitty fonts-noto
+sudo apt install hyprland wofi waybar fonts-font-awesome kitty fonts-noto qt6-wayland
+
+gamescope & gamescope:i386
 
 # todo
 

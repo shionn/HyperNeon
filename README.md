@@ -10,6 +10,6 @@ sudo apt install xwayland xserver-xorg-video-all
 
 Pour ce theme
 ~~~bash
-sudo apt install kitty rofi waybar fonts-font-awesome
+sudo apt install kitty wofi waybar fonts-font-awesome fonts-noto
 ~~~
 

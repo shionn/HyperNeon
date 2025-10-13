@@ -1,0 +1,25 @@
+
+@define-color accent #d8ae47;
+
+#window {
+    border: 2px solid @accent;
+    border-radius: 5px;
+}
+
+#window #outer-box {
+	margin: 10px;
+}
+
+#window #outer-box #input {
+	margin-bottom: 10px;
+    border: 2px solid @accent;
+    border-radius: 5px;
+}
+
+#window #outer-box #scroll #entry {
+	border-radius: 5px;
+}
+
+#window #outer-box #scroll #entry:selected {
+	background-color: @accent;
+}

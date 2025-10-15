@@ -2,10 +2,10 @@
 @define-color accent #d8ae47;
 
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-
+	/* `otf-font-awesome` is required to be installed for icons */
+	font-family: monospace, FontAwesome;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 window#waybar {

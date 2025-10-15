@@ -117,7 +117,7 @@ button:hover {
 }
 
 #power-profiles-daemon.balanced {
-    color: #2980b9;
+    color: @accent;
 }
 
 #power-profiles-daemon.power-saver {

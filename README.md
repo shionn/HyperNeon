@@ -13,3 +13,8 @@ Pour ce theme
 sudo apt install kitty wofi waybar fonts-font-awesome fonts-noto pavucontrol
 ~~~
 
+autre truc que j'aime avoir 
+~~~bash
+sudo apt install psmisc # killall
+~~~
+

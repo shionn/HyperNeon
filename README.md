@@ -16,6 +16,7 @@ sudo apt install power-profiles-daemon # pour l'icone de gestion d'energie
 
 autre truc que j'aime avoir 
 ~~~bash
-sudo apt install psmisc # killall
+sudo apt install screen \
+ psmisc # killall
 ~~~
 

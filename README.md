@@ -10,7 +10,7 @@ sudo apt install xwayland xserver-xorg-video-all pulseaudio pipewire pipewire-pu
 
 Pour ce theme
 ~~~bash
-sudo apt install kitty wofi waybar fonts-font-awesome fonts-noto pavucontrol
+sudo apt install kitty wofi waybar fonts-font-awesome fonts-noto pavucontrol mako-notifier
 sudo apt install power-profiles-daemon # pour l'icone de gestion d'energie
 ~~~
 
@@ -18,5 +18,6 @@ autre truc que j'aime avoir
 ~~~bash
 sudo apt install screen \
  psmisc # killall
+ libnotify-bin # pour tester les notification avec notify-send
 ~~~
 

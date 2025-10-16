@@ -22,3 +22,7 @@ sudo apt install screen \
  libnotify-bin # pour tester les notification avec notify-send
 ~~~
 
+
+# Ressource
+
+- https://sw.kovidgoyal.net/kitty/

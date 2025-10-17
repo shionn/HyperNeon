@@ -22,6 +22,10 @@ sudo apt install screen \
  libnotify-bin # pour tester les notification avec notify-send
 ~~~
 
+# a tester
+
+gnome-session --session gnome-wayland
+
 
 # Ressource
 

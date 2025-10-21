@@ -12,6 +12,7 @@ Pour ce theme
 ~~~bash
 sudo apt install kitty wofi waybar fonts-font-awesome  pavucontrol mako-notifier mpv
 sudo apt install power-profiles-daemon # pour l'icone de gestion d'energie
+sudo apt install brightnessctl # pour hypridle
 fonts-noto // pas sur
 ~~~
 

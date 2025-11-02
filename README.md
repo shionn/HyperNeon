@@ -29,7 +29,7 @@ sudo apt install screen \
 ~~~
 sudo apt install gnome-shell
 sudo systemctl disable gdm
-gnome-shell --wayland
+dbus-run-session gnome-shell --wayland
 ~~~
 
 

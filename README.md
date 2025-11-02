@@ -25,7 +25,12 @@ sudo apt install screen \
 
 # a tester
 
-gnome-session --session gnome-wayland
+## lancer gnome-shell sans gdm
+~~~
+sudo apt install gnome-shell
+sudo systemctl disable gdm
+gnome-shell --wayland
+~~~
 
 
 # Ressource

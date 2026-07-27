@@ -9,7 +9,7 @@ sudo apt install kitty wofi waybar power-profiles-daemon mako-notifier pavucontr
 sudo apt install fonts-font-awesome fonts-noto
 
 sudo apt install psmisc nfs-common cifs-utils wget htop gparted extrepo lm-sensors curl dnsutils ntpsec
-sudo apt install gedit evince loupe gnome-calculator nautilus xarchiver
+sudo apt install gedit evince loupe gnome-calculator thunar thunar-archive-plugin xarchiver
 
 sudo apt install git openjdk-21-jdk openjdk-21-source maven python3-venv
 sudo apt install gimp openscad inkscape kdenlive mpv f3d # vlc 

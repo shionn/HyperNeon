@@ -27,3 +27,23 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 # marche pas 
 #flatpak remote-add --if-not-exists ControllerBuddy https://flatpak.controllerbuddy.org/index.flatpakrepo
 #flatpak install de.bwravencl.ControllerBuddy
+
+
+
+# OPENRGB
+sudo apt install i2c-tools -y
+sudo modprobe i2c-dev
+sudo apt install ./files/openrgb_0.9_amd64_bookworm_b5f46e3.deb -y # a adapter
+
+echo "Configuration du rgb au reboot"
+sudo mkdir /etc/cron.reboot
+echo "@reboot		root	cd / && run-parts --report /etc/cron.reboot" | sudo tee --append /etc/crontab
+sudo cp ./files/rgb-on-reboot /etc/cron.reboot/
+sudo chmod +x /etc/cron.reboot/rgb-on-reboot 
+
+
+echo "Configuration du rgb au sleep"
+sudo mkdir /usr/lib/systemd/system-sleep/
+sudo cp ./files/rgb-on-suspen /usr/lib/systemd/system-sleep/
+sudo chmod +x /usr/lib/systemd/system-sleep/rgb-on-suspen 
+

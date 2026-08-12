@@ -5,7 +5,7 @@ if [ "${1}" == "pre" ]; then
   openrgb -d "ENE DRAM" -m 'Off'
 elif [ "${1}" == "post" ]; then
   echo "on post sleep"
-  nohup openrgb -d "MSI MPG B550 GAMING CARBON WIFI (MS-7C90)" -m 'Breathing' -c FF4000 -s 1 -d "ENE DRAM" -m 'Chase fade' --speed 4 -c FF4000 &
+#  nohup openrgb -d "MSI MPG B550 GAMING CARBON WIFI (MS-7C90)" -m 'Breathing' -c FF4000 -s 1 -d "ENE DRAM" -m 'Chase fade' --speed 4 -c FF4000 &
 #  openrgb -d "MSI MPG B550 GAMING CARBON WIFI (MS-7C90)" -m 'Breathing' -c FF4000 -s 1 -d "ENE DRAM" -m 'Chase fade' --speed 4 -c FF4000 &
 #  openrgb -d "MSI MPG B550 GAMING CARBON WIFI (MS-7C90)" -m 'Breathing' -c FF4000 -s 1
 #  openrgb -d "ENE DRAM" -m 'Chase fade' --speed 4 -c FF4000 
